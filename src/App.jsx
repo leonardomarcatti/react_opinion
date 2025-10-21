@@ -3,18 +3,16 @@ import { Opinions } from './components/Opinions';
 import { NewOpinion } from './components/NewOpinion';
 import { OpinionsContextProvider } from './store/opinions-context';
 
-function App() {
-  return (
-    <>
+const App = () => {
+   return <>
       <Header />
       <main>
-        <OpinionsContextProvider>
-          <NewOpinion />
-          <Opinions />
-        </OpinionsContextProvider>
+         <OpinionsContextProvider>
+            <NewOpinion />
+            <Opinions />
+         </OpinionsContextProvider>
       </main>
-    </>
-  );
+   </>
 }
 
 export default App;

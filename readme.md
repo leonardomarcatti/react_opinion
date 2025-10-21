@@ -1,4 +1,4 @@
-<h1>💬 Opinion Hub — Sistema de Opiniões com React 19 + Context API</h1>
+<h1>💬 OpinionHub — Sistema de Opiniões com React 19 + ContextAPI</h1>
 <p> Um sistema web moderno desenvolvido em **React 19** que permite aos usuários compartilhar e visualizar **opiniões** sobre qualquer tema.  
 O projeto utiliza **Context API** para gerenciamento global de estado e roda em **container Docker** para garantir portabilidade e fácil deploy.  
 Gerenciado com **pnpm**, garantindo desempenho e consistência nas dependências.</p>
@@ -19,7 +19,7 @@ Gerenciado com **pnpm**, garantindo desempenho e consistência nas dependências
 </ul>
 
 ---
-<h2>## 🧰 Funcionalidades</h2>
+<h2>🧰 Funcionalidades</h2>
 <ul>
    <li>✍️ Criar e enviar opiniões (comentários, reviews, sugestões, etc.)</li>
    <li>🔐 Persistência local (armazenamento no navegador)</li>
@@ -30,7 +30,7 @@ Gerenciado com **pnpm**, garantindo desempenho e consistência nas dependências
 </ul>
 
 ---
-<h2>## 🏗️ Estrutura do Projeto</h2>
+<h2>🏗️ Estrutura do Projeto</h2>
 
 <p>src/</p>
 <p>├── components/ # Componentes reutilizáveis (Botões, Cards, etc.)</p>
