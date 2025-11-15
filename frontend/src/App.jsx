@@ -1,14 +1,14 @@
 import { Header } from './components/Header';
 import { Opinions } from './components/Opinions';
-import { NewOpinion } from './components/NewOpinion';
+import NewOpinion from './components/NewOpinion';
 import { OpinionsContextProvider } from './store/opinions-context';
 
 const App = () => {
    return <>
-      <Header />
+      {/* <Header /> */}
       <main>
          <OpinionsContextProvider>
-            <NewOpinion />
+            {/* <NewOpinion /> */}
             <Opinions />
          </OpinionsContextProvider>
       </main>

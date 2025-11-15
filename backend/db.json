@@ -1,6 +1,69 @@
 {
   "opinions": [
     {
+      "id": 1763033802399,
+      "votes": 7,
+      "userName": "asdasd",
+      "title": "dsadsa",
+      "body": "asdasdadasdasdasdasdasd"
+    },
+    {
+      "id": 1762957180849,
+      "votes": 0,
+      "userName": "This is my name",
+      "title": "This is my Tile",
+      "body": "This is a great text!"
+    },
+    {
+      "id": 1762956463935,
+      "votes": 0,
+      "userName": "fffffffffffffffffffffff",
+      "title": "fffffffffffffffffffffffff",
+      "body": "fffffffffffffffffffffffff"
+    },
+    {
+      "id": 1762956010287,
+      "votes": 0,
+      "userName": "aaaaaaaaaaaaaaaaaa",
+      "title": "aaaaaaaaaaaaaaaaaaaa",
+      "body": "ddddddddddd"
+    },
+    {
+      "id": 1762955584823,
+      "votes": 0,
+      "userName": "aaaaaaaaaaaaaaaaaaa",
+      "title": "sssssssssssssssssssss",
+      "body": "ddddddddddddddddddddddddddd"
+    },
+    {
+      "id": 1762955478117,
+      "votes": 0,
+      "userName": "asdasdasdasd",
+      "title": "asdasdasdasdas",
+      "body": "asdasdasdasdasdasd"
+    },
+    {
+      "id": 1762955024079,
+      "votes": 0,
+      "userName": "asdasdasdasd",
+      "title": "asdasdasdasdasd",
+      "body": "asdasdasdasdasdasd"
+    },
+    {
+      "id": 1762955010095,
+      "votes": 0,
+      "userName": "aaaaaaaa",
+      "title": "aaaaaaaaaaaaaa",
+      "body": "asdasdasdasdasd"
+    },
+    {
+      "id": 1762873492141,
+      "votes": 0,
+      "userName": "Leonardo Marcatti",
+      "title": "My title",
+      "body": "This is a great text typed here!"
+    },
+    {
       "id": 1,
       "userName": "Maximilian Schwarzmüller",
       "title": "Do yourself a favor and learn React!",

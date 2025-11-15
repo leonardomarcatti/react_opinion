@@ -67,7 +67,7 @@ app.get('/opinions', async (req, res) => {
 app.post('/opinions', async (req, res) => {
    const { userName, title, body } = req.body;
 
-   await new Promise((resolve) => setTimeout(resolve, 1000));
+   await new Promise((resolve) => setTimeout(resolve, 3000));
 
    if (!userName || !title || !body) {
       return res

@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from 'react';
-
+const address = 'http://192.168.1.160:3001'
 export const OpinionsContext = createContext({
    opinions: null,
    addOpinion: (opinion) => { },
@@ -12,7 +12,7 @@ export function OpinionsContextProvider({ children }) {
 
    useEffect(() => {
       async function loadOpinions() {
-         const response = await fetch('http://192.168.1.160:3001/opinions');
+         const response = await fetch(`${address}/opinions`);
          const opinions = await response.json();
          setOpinions(opinions);
       }
@@ -21,7 +21,7 @@ export function OpinionsContextProvider({ children }) {
    }, []);
 
    async function addOpinion(enteredOpinionData) {
-      const response = await fetch('http://192.168.1.160:3001/opinions', {
+      const response = await fetch(`${address}/opinions`, {
          method: 'POST',
          headers: {
             'Content-Type': 'application/json',
@@ -37,7 +37,15 @@ export function OpinionsContextProvider({ children }) {
       setOpinions((prevOpinions) => [savedOpinion, ...prevOpinions]);
    }
 
-   function upvoteOpinion(id) {
+   const upvoteOpinion = async id => {
+      const response = await fetch(`${address}/opinions/${id}/upvote`, {
+         method: 'post',         
+      })
+
+      if (!response.ok) {
+         return;
+      }
+
       setOpinions((prevOpinions) => {
          return prevOpinions.map((opinion) => {
             if (opinion.id === id) {
@@ -48,7 +56,14 @@ export function OpinionsContextProvider({ children }) {
       });
    }
 
-   function downvoteOpinion(id) {
+   const downvoteOpinion = async id => {
+      const response = await fetch(`${address}/opinions/${id}/downvote`, {
+         method: 'post',
+      })
+
+      if (!response.ok) {
+         return null;
+      }
       setOpinions((prevOpinions) => {
          return prevOpinions.map((opinion) => {
             if (opinion.id === id) {
